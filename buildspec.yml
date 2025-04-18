@@ -8,9 +8,9 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - docker build -t Pong-game .
+      - docker build -t pong-game .
       - echo Tagging the Docker image...
-      - docker tag Pong-game:latest 897722675270.dkr.ecr.eu-north-1.amazonaws.com/ping-pong-game-repo:latest
+      - docker tag pong-game:latest 897722675270.dkr.ecr.eu-north-1.amazonaws.com/ping-pong-game-repo:latest
   post_build:
     commands:
       - echo Pushing the Docker image to Amazon ECR...
